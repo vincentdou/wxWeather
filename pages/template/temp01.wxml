@@ -1,0 +1,9 @@
+<template name="future-item">
+    <view class="future-item">
+        <view>{{item.date}}</view>
+        <view>{{item.week}}</view>
+        <view>{{item.info.day[1]}}/{{item.info.night[1]}}</view>
+        <view>{{item.info.day[2]}}℃/{{item.info.night[2]}}℃</view>
+        <view>{{item.info.day[4]}}</view>
+    </view>
+</template>

@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/main/main"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#252525",
+    "navigationBarTitleText": "小天气",
+    "navigationBarTextStyle":"white"
+  }
+}

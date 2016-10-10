@@ -1,0 +1,29 @@
+<view class="content">
+    <text class="city">{{realtime.city_name}}</text>
+    <view class="today">
+        <view class="main">
+            <view class="left">
+                <view class="tempnow">{{realtime.weather.temperature}}℃</view>
+                <view class="weather">
+                    {{realtime.weather.info}}
+                    {{today.info.day[2]}}℃/{{today.info.night[2]}}℃
+                </view>
+            </view>
+            <view class="right">
+                <view class="kongqi">空气质量：{{pm25.pm25.quality}}</view>
+                <view class="pm25">PM2.5：{{pm25.pm25.pm25}}</view>
+                <view class="wind">{{realtime.wind.direct}}{{realtime.wind.power}}</view>
+            </view>
+        </view>
+        <view class="advice">穿衣建议：{{life.info.chuanyi}}</view>
+        <view class="update">最近更新：{{realtime.time}}</view>
+    </view>
+
+    <import src="../template/temp01"/>
+
+    <view class="future">
+        <block wx:for="{{weather}}">
+            <template is="future-item" data="{{item}}"/>
+        </block>
+    </view>
+</view>
