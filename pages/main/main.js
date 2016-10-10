@@ -54,7 +54,7 @@ Page({
   loadWeather:function(city){
     var page = this;
     wx.request({
-        url: 'http://op.juhe.cn/onebox/weather/query?cityname=' + city + '&key=bd0bf99155b914d1a42eee5386e5ec06',
+        url: 'http://op.juhe.cn/onebox/weather/query?cityname=' + city + '&key=你的APIkey',
         header: {
             'Content-Type': 'application/json'
         },
